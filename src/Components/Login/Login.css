@@ -1,0 +1,74 @@
+/* General form container styling */
+.login_main .container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.login_main h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input field styling */
+.login_main input[type="text"],
+.login_main input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Focus effect on input fields */
+.login_main input[type="text"]:focus,
+.login_main input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Button styling */
+.login_main button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.login_main button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for displaying fetched data */
+.login_main pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    margin-top: 20px;
+    white-space: pre-wrap; /* Ensure long lines of text wrap */
+    word-wrap: break-word;
+}
+
+/* Error message styling */
+.login_main p {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}

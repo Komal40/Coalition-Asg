@@ -1,0 +1,134 @@
+
+body{
+    height: 100%;
+}
+.main-layout{
+    display: flex;
+    height: 100vh;
+}
+
+
+.leftsidebar{
+    height: 100vh;
+}
+
+.rightcontent{
+    flex: 1;
+   overflow: scroll;
+     /* background: white; */
+}
+
+
+.rightcontent::-webkit-scrollbar{
+    display: none;
+}
+
+.layout_patients_main{
+    margin-top: 1rem;
+    background-color: var(--bgColor);
+    width: 20rem;
+    height: 100vh;
+    border-radius: 18px;
+    padding:0.4rem 2rem;
+    font-family: "Manrope", serif;  
+    overflow: scroll;
+}
+
+.layout_search_icon{
+    font-size: 1.2rem;
+}
+.layout_patient_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout_list_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2rem 0;
+    cursor: pointer;
+}
+
+.layout_list_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout_list_item img{
+    width: 48px;
+height: 48px;
+object-fit: contain;
+}
+.layout_name{
+    font-weight: bolder;
+    font-size: 14px;
+}
+.layout_age{
+    color: var(--textgrey);
+    font-size: 12px;
+}
+
+.layout_list_name{
+    padding:0 20px;
+}
+
+.layout_horizontal{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+.main-layout ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  
+ .main-layout ::-webkit-scrollbar-track {
+    background: #E3E4E6; 
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  
+
+  .main-layout ::-webkit-scrollbar-thumb {
+    background-color: rgb(36, 36, 36); 
+    border-radius: 6px; 
+  }
+  
+ @media screen and (max-width:900px) {
+    .leftsidebar  .layout_patients_main{
+        width: 50px;
+      }
+      .layout_patients_main{
+        padding: 0.4rem ;
+      }
+      .layout_patient_heading h2{
+        font-size: 12px;
+      }
+      .layout_search_icon {
+        display: none;
+      }
+      .layout_list_item {
+        justify-content: center;
+        padding: 10px 0;
+      }
+    
+      .layout_list_item img {
+        width: 40px;
+        height: 40px;
+      }
+    
+      .layout_list_name {
+        display: none;
+      }
+      .layout_horizontal{
+        display: none;
+      }
+      
+ }
+
+
+  
